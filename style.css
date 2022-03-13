@@ -24,47 +24,58 @@ img {
   height: 14px;
 }
 .line {
-  width: 8px;
+  width: 12px;
   height: 150px;
   background: #f7df94;
 }
-.container {
-  margin: auto;
+#main {
+  margin-top: 20px;
 }
 .main {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.container {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.subDiv {
   margin: auto;
   display: flex;
-  margin-top: 50px;
   width: 300px;
-  gap: 20px;
+  gap: 30px;
+  font-size: 20px;
   padding: 20px;
   align-items: center;
 }
 .p {
   font-family: "Raleway";
-  font-weight: bold;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 120%;
   padding: 0px 10px;
 }
 .author {
-  margin: auto;
-  margin: 50px 0px 0px 40px;
+  margin: 50px 30px;
   padding: 20px;
-  width: 300px;
+  width: 255px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
-.author:hover{
-    width: 255px;
-    color: white;
-    height: 95px;
-    background: #333333;
+.author:hover {
+  width: 250px;
+  color: white;
+  height: 95px;
+  margin: auto;
+  background: #333333;
 }
-a{
-    color: #4F4F4F;
-    text-decoration: none;
+a {
+  color: #4f4f4f;
+  text-decoration: none;
 }
 
 h1 {
@@ -79,29 +90,80 @@ h1 {
   line-height: 16px;
   color: #828282;
 }
+.bill {
+  text-align: center;
+}
 @media (min-width: 768px) {
-  .line {
-    width: 10px;
-    height: 150px;
-    background: #f7df94;
+  #main {
+    margin-top: 20px;
   }
   .container {
     margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
-  .main {
+  .line {
+    width: 14px;
+    height: 150px;
+    background: #f7df94;
+  }
+  .subDiv {
     margin: auto;
     display: flex;
-    width: 300px;
-    gap: 10px;
+    width: 600px;
+    gap: 40px;
+    font-size: 25px;
+    padding: 30px 20px;
     align-items: center;
   }
   .p {
-    position: absolute;
-    width: 300px;
-    height: 301px;
-    font-family: "Raleway";
     font-weight: 500;
-    font-size: 26px;
-    line-height: 120px;
+    font-size: 25px;
+    line-height: 120%;
+    padding: 0px 10px;
+  }
+  .author {
+    padding: 20px;
+    width: 455px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  .author:hover {
+    width: 450px;
+    color: white;
+    height: 120px;
+    background: #333333;
+    margin: auto;
+  }
+  a {
+    color: #4f4f4f;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 28px;
+    color: #4f4f4f;
+  }
+  .content > p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+  }
+  .bill {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    color: #333333;
+  }
+  .random{
+    padding: 20px 30px;
   }
 }

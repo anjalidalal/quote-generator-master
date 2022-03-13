@@ -9,14 +9,18 @@ fetch("https://quote-garden.herokuapp.com/api/v3/quotes/random")
         console.log(data);
 
         data.data.forEach(function (el) {
+            let subDiv = document.createElement("div");
+            subDiv.setAttribute("class", "subDiv");
+
+            
             const yellowDiv = document.createElement("div");
             yellowDiv.setAttribute("class", "line");
 
             const p = document.createElement("p");
             p.textContent = el.quoteText;
-            p.setAttribute("class", "para");
 
-            mainDiv.append(yellowDiv, p)
+            subDiv.append(yellowDiv, p);
+            mainDiv.appendChild(subDiv);
         });
 
     })
@@ -32,11 +36,24 @@ fetch(`https://quote-garden.herokuapp.com/api/v3/quotes?author=${author}&limit=3
     .then(function (data) {
         console.log(data);
         data.data.forEach(function (el) {
+            let subDiv = document.createElement("div");
+            subDiv.setAttribute("class", "subDiv");
+
+            
+            const yellowDiv = document.createElement("div");
+            yellowDiv.setAttribute("class", "line");
+
             const p = document.createElement("p");
             p.textContent = el.quoteText;
+            p.setAttribute("class", "p")
 
-            main.appendChild(p)
+            subDiv.append(yellowDiv, p);
+            main.appendChild(subDiv);
         });
 
     })
 
+
+function showDiv() {
+
+}
