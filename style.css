@@ -139,6 +139,9 @@ h1 {
     background: #333333;
     margin: auto;
   }
+  .author:hover * {
+    color: white;
+  }
   a {
     color: #4f4f4f;
     text-decoration: none;
